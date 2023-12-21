@@ -6,14 +6,16 @@
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
-<div class="container-main box">
+<div class="container-home-main box">
     <div class="container-header box">
         <div class="container-subscribe box">
             <div class="subscribe-text box">Subscribe</div>
         </div>
         <div class="container-header-title">
-            <div class="header-title-text box" style="font-size: 1.5em; justify-content: center; line-height: 1em;">
-                My Blog
+            <div class="header-title-text box clickable"
+                 style="font-size: 1.5em; justify-content: center; line-height: 1em;">
+                <a href="index.html" class="stretch-link"></a>
+                <div>My Blog</div>
             </div>
         </div>
         <div class="container-search box">
@@ -21,7 +23,7 @@
         </div>
     </div>
     <div class="container-content box">
-        <div class="card-blog box clickable">
+        <div class="card-blog box clickable animated">
             <div>
                 <a href="blog/blog1.html" class="stretch-link"></a>
                 <div class="tag">World</div>
@@ -33,7 +35,7 @@
                 </div>
             </div>
         </div>
-        <div class="card-blog box clickable">
+        <div class="card-blog box clickable animated">
             <div>
                 <a href="blog/blog1.html" class="stretch-link"></a>
                 <div class="tag">World</div>
@@ -52,7 +54,7 @@
             </div>
         </div>
     </div>
-    <div class="box">
+    <div class="container-footer box" style="display: flex; justify-content: center">
         <div class="datetime box" style="justify-content: center; align-items: center">Blog template built by
             ethan-yz-hao
         </div>
