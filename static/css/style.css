@@ -1,6 +1,6 @@
 .box {
-    border: 1px solid red;
-    background: #F8FA9D;
+    /*border: 1px solid red;*/
+    /*background: #F8FA9D;*/
 }
 
 .container-home-main {
@@ -150,7 +150,7 @@
     z-index: 1;
 }
 
-.animated:hover {
+.animated-post:hover {
     animation-name: shadowChange;
     animation-duration: 0.15s;
     animation-timing-function: ease-in-out;
@@ -178,6 +178,10 @@
     "ft";
 }
 
+.container-side {
+    grid-area: sd;
+}
+
 .blog-title {
     margin: 5px 0 5px 0;
     display: flex;
@@ -203,11 +207,10 @@
 }
 
 .blog-separator {
-    height: 1px;
+    height: 0;
     width: 100%;
-    border: none;
+    border-top: solid 1px #000009;
     margin: 5px 0 5px 0;
-    background: #000009;
 }
 
 .blog-content-text {
@@ -244,4 +247,62 @@
 
 .link-text:hover {
     text-decoration: none;
+}
+
+.button-1 {
+    margin: 5px;
+    border: solid 2px #4169E1;
+    background: none;
+    color: #4169E1;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 1.1em;
+    border-radius: 10px;
+}
+
+.animated-button1:hover {
+    animation-name: button1Change;
+    animation-duration: 0.15s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1; /* Run only once */
+    animation-fill-mode: forwards; /* Retain the final state after animation */
+}
+
+@keyframes button1Change {
+    from {
+        background: none;
+        color: #4169E1;
+    }
+    to {
+        background: #4169E1;
+        color: #ffffff;
+    }
+}
+
+.button-2 {
+    margin: 5px;
+    border: solid 2px #A1A7A8;
+    background: none;
+    color: #A1A7A8;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 1.1em;
+    border-radius: 10px;
+}
+
+.animated-button2:hover {
+    animation-name: button2Change;
+    animation-duration: 0.15s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1; /* Run only once */
+    animation-fill-mode: forwards; /* Retain the final state after animation */
+}
+
+@keyframes button2Change {
+    from {
+        background: none;
+        color: #A1A7A8;
+    }
+    to {
+        background: #A1A7A8;
+        color: #ffffff;
+    }
 }
