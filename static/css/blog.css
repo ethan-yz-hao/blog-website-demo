@@ -1,4 +1,4 @@
-blog-page {
+.container-blog-main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 6vh auto auto 5vh;
@@ -17,7 +17,7 @@ blog-page {
     align-items: start;
 }
 
-.container-side {
+aside {
     grid-area: sd;
     margin: 0 1vw 0 1vw;
     display: flex;
@@ -129,4 +129,15 @@ blog-page {
 
 .link-text:hover {
     text-decoration: none;
+}
+
+.container-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+aside section {
+    padding: 8px;
 }

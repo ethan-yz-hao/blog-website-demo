@@ -1,4 +1,4 @@
-home-page {
+.container-home-main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 6vh auto 5vh;
@@ -145,7 +145,7 @@ header {
     color: #000009;
 }
 
-.container-footer {
+footer {
     grid-area: ft;
 }
 

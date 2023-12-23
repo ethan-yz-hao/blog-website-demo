@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../static/css/main.css">
 </head>
 <body>
-<blog-page class=" box">
+<div class="container-blog-main box">
     <header class="box">
         <div class="container-subscribe box">
             <div class="subscribe-text box">Subscribe</div>
@@ -22,7 +22,7 @@
             <img class="box" src="../static/image/search.png" style="height: 1.2em;" alt="magnifying glass">
         </div>
     </header>
-    <div class="container-blog-content box">
+    <section class="container-blog-content box">
         <div class="blog-title box">Sample Blog</div>
         <div class="datetime box">December 16, 2023 by&nbsp<span class="link-text">Ethan</span></div>
         <hr class="blog-separator"/>
@@ -109,14 +109,14 @@
         </div>
         <hr class="blog-separator"/>
 
-        <div class="box" style="display: flex; flex-direction: row; justify-content: center; width: 100%;">
+        <div class="container-button box">
             <button type="button" class="button-1 animated-button1">Newer Post</button>
             <button type="button" class="button-2 animated-button2">Older Post</button>
         </div>
         <br/>
-    </div>
-    <div class="container-side box">
-        <div style="background: #E3E3E3; padding: 8px">
+    </section>
+    <aside class=" box">
+        <section style="background: #E3E3E3;">
             <i class="blog-h1">About</i>
             <img src="../static/image/avatar.png" alt="Sample Image" style="width:100%">
             <div class="blog-content-text"><strong>Ethan Hao</strong></div>
@@ -127,14 +127,14 @@
                 eleifend. Nam a viverra ipsum. Etiam pulvinar ipsum lorem, sit amet sodales purus venenatis sodales.
                 Integer eu odio quam.
             </div>
-        </div>
-        <div style="padding: 8px">
+        </section>
+        <section>
             <i class="blog-h1">Archives</i>
             <div class="blog-content-text"><span class="link-text">December 2023</span></div>
             <div class="blog-content-text"><span class="link-text">October 2023</span></div>
             <div class="blog-content-text"><span class="link-text">September 2023</span></div>
-        </div>
-        <div style="padding: 8px">
+        </section>
+        <section>
             <i class="blog-h1">Elsewhere</i>
             <div class="blog-content-text">
                 <img class="box" src="../static/image/github-mark.png" alt="Github Icon" style="height: 1em;">
@@ -152,13 +152,11 @@
                 <img class="box" src="../static/image/facebook-icon.png" alt="Facebook Icon" style="height: 1em;">
                 <span class="link-text">Facebook</span>
             </div>
-        </div>
-    </div>
-    <div class="container-footer box" style="display: flex; justify-content: center;">
-        <div class="datetime box" style="justify-content: center; align-items: center">Blog template built by
-            ethan-yz-hao
-        </div>
-    </div>
-</blog-page>
+        </section>
+    </aside>
+    <footer class="datetime box" style="display: flex; justify-content: center; align-items: center;">
+        Blog template built by ethan-yz-hao
+    </footer>
+</div>
 </body>
 </html>
