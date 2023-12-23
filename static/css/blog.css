@@ -1,0 +1,132 @@
+blog-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6vh auto auto 5vh;
+    grid-template-areas:
+    "hd"
+    "ct"
+    "sd"
+    "ft";
+}
+
+.container-blog-content {
+    margin: 0 1vw 0 1vw;
+    display: flex;
+    grid-area: ct;
+    flex-direction: column;
+    align-items: start;
+}
+
+.container-side {
+    grid-area: sd;
+    margin: 0 1vw 0 1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 720px) and (max-width: 1280px) {
+    .container-blog-main {
+        display: grid;
+        grid-template-columns: auto 25vw;
+        grid-template-rows: 6vh auto 5vh;
+        grid-template-areas:
+    "hd hd"
+    "ct sd"
+    "ft ft";
+    }
+
+    .container-side {
+        grid-area: sd;
+        margin: 0 1vw 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1281px) {
+    .container-blog-main {
+        display: grid;
+        grid-template-columns: auto 320px;
+        grid-template-rows: 6vh auto 5vh;
+        grid-template-areas:
+    "hd hd"
+    "ct sd"
+    "ft ft";
+    }
+
+    .container-side {
+        grid-area: sd;
+        margin: 0 1vw 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.blog-title {
+    margin: 5px 0 5px 0;
+    display: flex;
+    font-family: "Times New Roman", serif;
+    font-size: 2em;
+    color: #000009;
+    font-weight: bold;
+}
+
+.blog-h1 {
+    margin: 5px 0 0 0;
+    font-family: "Times New Roman", serif;
+    font-size: 1.5em;
+    color: #000009;
+    font-weight: bold;
+}
+
+.blog-h2 {
+    margin: 5px 0 0 0;
+    font-family: "Times New Roman", serif;
+    font-size: 1.25em;
+    color: #000009;
+    font-weight: bold;
+}
+
+.blog-separator {
+    height: 0;
+    width: 100%;
+    border-top: solid 1px #000009;
+    margin: 5px 0 5px 0;
+}
+
+.blog-content-text {
+    margin: 5px auto;
+    font-family: "Times New Roman", serif;
+    font-size: 1.1em;
+    color: #000009;
+}
+
+.code-text {
+    width: calc(100% - 20px);
+    height: auto;
+    border: 1px solid #000009;
+    margin: 5px auto;
+    font-size: 0.8em;
+    font-family: "Courier New", Courier, monospace;
+    color: #333;
+    white-space: pre-wrap;
+}
+
+.blog-list {
+    margin: 5px auto;
+}
+
+.blog-li {
+    font-family: "Times New Roman", serif;
+    font-size: 1.1em;
+    color: #000009;
+}
+
+.link-text {
+    color: #4169E1;
+    text-decoration: underline;
+}
+
+.link-text:hover {
+    text-decoration: none;
+}

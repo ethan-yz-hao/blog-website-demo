@@ -1,0 +1,67 @@
+.button-1 {
+    margin: 5px;
+    border: solid 2px #4169E1;
+    background: none;
+    color: #4169E1;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 1.1em;
+    border-radius: 10px;
+}
+
+.animated-button1:hover {
+    animation-name: button1Change;
+    animation-duration: 0.15s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1; /* Run only once */
+    animation-fill-mode: forwards; /* Retain the final state after animation */
+}
+
+@keyframes button1Change {
+    from {
+        background: none;
+        color: #4169E1;
+    }
+    to {
+        background: #4169E1;
+        color: #ffffff;
+    }
+}
+
+.button-2 {
+    margin: 5px;
+    border: solid 2px #A1A7A8;
+    background: none;
+    color: #A1A7A8;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 1.1em;
+    border-radius: 10px;
+}
+
+.animated-button2:hover {
+    animation-name: button2Change;
+    animation-duration: 0.15s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button2Change {
+    from {
+        background: none;
+        color: #A1A7A8;
+    }
+    to {
+        background: #A1A7A8;
+        color: #ffffff;
+    }
+}
+
+blockquote p {
+    padding: 15px;
+    background: #E3E3E3;
+    border-radius: 5px;
+}
+
+figure figcaption {
+    text-align: center;
+}
